@@ -1,5 +1,8 @@
+tests\GitPractice2.class
+tests\GitPractice.class
 tests\BaseTest.class
 utilities\ScreenShot.class
 tests\LoginTest.class
 utilities\ListenersClass.class
+utilities\GitPractise.class
 utilities\ReadPropertyClass.class

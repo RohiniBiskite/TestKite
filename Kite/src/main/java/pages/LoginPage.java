@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 	
 
-	
+	private WebDriver driver;
 	
 	@FindBy(id="txtUsername")
 	private WebElement useranme;
@@ -21,7 +21,7 @@ public class LoginPage {
 	
 	public LoginPage(WebDriver driver) {
 		
-	
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
