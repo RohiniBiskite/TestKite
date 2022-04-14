@@ -17,44 +17,32 @@ import utilities.ReadPropertyClass;
 
 public class BaseTest {
 
-	public  static WebDriver driver;
+	public static WebDriver driver;
 	String url1;
-	
+
 	@BeforeSuite
 	public void inialization() throws IOException {
-		
-		WebDriverManager.chromedriver().setup();
-		
-		 driver=new ChromeDriver();
-		 
-		 driver.manage().window().maximize();
-		 
 
-		 String path=System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties";
-			
-		Properties  prop=new Properties();
-		 
-		FileInputStream fis =new FileInputStream(path);
-		 
-		
-			prop.load(fis);
-			
-	
-		
-		 
-		
-			driver.get(prop.getProperty("url"));
-		
-		 
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
-			
-		
-			
-			
+		WebDriverManager.chromedriver().setup();
+
+		driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+
+		String path = System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties";
+
+		Properties prop = new Properties();
+
+		FileInputStream fis = new FileInputStream(path);
+
+		prop.load(fis);
+
+		driver.get(prop.getProperty("url"));
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(8));
+
 	}
 
-	
-	
 	@AfterSuite
 	public void tearDown() {
 		driver.close();

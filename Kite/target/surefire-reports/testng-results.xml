@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-31T20:50:07 IST" name="Suite" finished-at="2022-03-31T20:50:11 IST" duration-ms="4162">
+  <suite started-at="2022-04-03T11:18:08 IST" name="Suite" finished-at="2022-04-03T11:18:12 IST" duration-ms="4186">
     <groups>
     </groups>
-    <test started-at="2022-03-31T20:50:07 IST" name="Test" finished-at="2022-03-31T20:50:11 IST" duration-ms="4162">
+    <test started-at="2022-04-03T11:18:08 IST" name="Test" finished-at="2022-04-03T11:18:12 IST" duration-ms="4186">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="inialization()[pri:0, instance:tests.LoginTest@7133da86]" started-at="2022-03-31T20:50:02 IST" name="inialization" finished-at="2022-03-31T20:50:07 IST" duration-ms="5568" status="PASS">
+        <test-method is-config="true" signature="inialization()[pri:0, instance:tests.LoginTest@7133da86]" started-at="2022-04-03T11:18:01 IST" name="inialization" finished-at="2022-04-03T11:18:08 IST" duration-ms="7058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inialization -->
-        <test-method signature="login()[pri:0, instance:tests.LoginTest@7133da86]" started-at="2022-03-31T20:50:07 IST" name="login" finished-at="2022-03-31T20:50:11 IST" duration-ms="3971" status="FAIL">
+        <test-method signature="login()[pri:0, instance:tests.LoginTest@7133da86]" started-at="2022-04-03T11:18:08 IST" name="login" finished-at="2022-04-03T11:18:12 IST" duration-ms="4000" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -61,7 +61,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@7133da86]" started-at="2022-03-31T20:50:11 IST" name="tearDown" finished-at="2022-03-31T20:50:12 IST" duration-ms="48" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@7133da86]" started-at="2022-04-03T11:18:12 IST" name="tearDown" finished-at="2022-04-03T11:18:12 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
